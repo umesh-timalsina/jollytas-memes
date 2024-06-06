@@ -3,14 +3,14 @@ import fs from 'fs';
 import path from 'path';
 import sizeOf from 'image-size';
 
-const imageDir = path.join('public/memes');
+const imageDir = path.join('jollyta/memes');
 const outputFile = path.join('src/lib/memeList.json');
 
 const images = fs.readdirSync(imageDir).map((file) => {
 	const filePath = path.join(imageDir, file);
 	const dimensions = sizeOf(filePath);
 	return {
-		src: `/public/memes/${file}`,
+		src: `/jollyta/memes/${file}`,
 		width: dimensions.width,
 		height: dimensions.height
 	};

@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Define the source and destination directories
-const sourceDir = path.join(__dirname, '..', 'public', 'memes');
-const destDir = path.join(__dirname, '..', 'build', 'public', 'memes');
+const sourceDir = path.join(__dirname, '..', 'jollyta', 'memes');
+const destDir = path.join(__dirname, '..', 'build', 'jollyta', 'memes');
 
 // Ensure the destination directory exists
 fs.ensureDirSync(destDir);
