@@ -131,7 +131,7 @@
 		<Circle2 size="300" unit="px"></Circle2>
 	</div>
 	<div class="info-button hover:opacity-1" title="Info" on:click={showInfoModal}>
-		<img src="/info.svg" alt="Info" width="50" height="50" />
+		<img src="info.svg" alt="Info" width="50" height="50" />
 	</div>
 	{#if isInfoModalDisplayed}
 		<div class="modal">
